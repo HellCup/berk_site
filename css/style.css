@@ -1,0 +1,379 @@
+body {
+  background-color: #f7f8fa;
+  font-family: "Source Sans Pro Regular", sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+body li {
+  list-style-type: none;
+}
+
+.header {
+  background-image: url(/images/BG.png);
+  background-repeat: round;
+}
+/* Здесь начинается верхнее меню */
+
+.btn {
+  color: #393939;
+  font-family: "Source Sans Pro SemiBold", sans-serif;
+  font-size: 18px;
+  width: 220px;
+  height: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.btn.gen {
+  padding-top: 35px;
+  text-align: center;
+}
+.btn.about {
+  padding-top: 35px;
+  text-align: center;
+}
+.btn.dam {
+  padding: 25px 58px 27px 58px;
+  text-align: center;
+}
+.btn.cont {
+  padding-top: 35px;
+  text-align: center;
+}
+.btn:hover {
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 1px #edeeef;
+}
+.navbar-logo {
+  height: 100px;
+  width: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border: none;
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px 1px #edeeef;
+}
+/* Здесь заканчивается верхнее меню */
+
+/* Здесь начинается Лейбл */
+.line {
+  width: 100%;
+  margin-top: 80px;
+  text-align: left;
+  border-left: 1px solid #393939;
+  padding-left: 26px;
+  margin-right: 1px;
+}
+h1 {
+  color: #393939;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  width: 200px;
+  margin: 0px 0px 0px 0px;
+}
+h2 {
+  color: #393939;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  width: 200px;
+  margin: 13px 0px 0px 0px;
+}
+.lable-text {
+  display: inline-block;
+}
+
+/*Отсюда начинается кнопка "Заказать звонок"/////////////////////////////////////////////////////////////////////////////////////*/
+
+.lable-button {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 20px 30px;
+  position: absolute;
+  color: #393939;
+  border: 1px solid #393939;
+  background: none;
+  font-weight: 300;
+  font-family: "Source Sans Pro Regular", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.lable-button:before,
+.lable-button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.lable-button:before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid#393939;
+  border-top: 1px solid #393939;
+  transition: 0s ease opacity 0.8s, 0.2s ease width 0.4s, 0.2s ease height 0.6s;
+}
+
+.lable-button:after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid #393939;
+  border-bottom: 1px solid #393939;
+  transition: 0s ease opacity 0.4s, 0.2s ease width, 0.2s ease height 0.2s;
+}
+.lable-button:hover:before,
+.lable-button:hover:after {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.lable-button:hover:before {
+  transition: 0s ease opacity 0s, 0.2s ease height, 0.2s ease width 0.2s;
+}
+.lable-button:hover:after {
+  transition: 0s ease opacity 0.4s, 0.2s ease height 0.4s, 0.2s ease width 0.6s;
+}
+.lable-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.lable-button:active {
+  background: #bfe5f3;
+  color: #004041;
+  border: 1px solid #006667;
+}
+
+/*Здесь заканчивается Лейбл и кнопка "Заказать звонок"*/
+
+/* Здесь начинается BG-"БЕРКУТ" и кнопка "Каталог" */
+.BG {
+  width: 100%;
+  text-align: center;
+}
+.lable-BG {
+  padding-top: 21px;
+  text-align: center;
+}
+/* Здесь начинается стрелка каталога */
+.catalog-button {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+.cat-button {
+  text-decoration: none;
+  color: #393939;
+}
+.cat-button .arrow {
+  transition: 0.4s;
+}
+.cat-button:hover .arrow {
+  color: #006667;
+  transform: translateY(4px);
+}
+/* Здесь заканчивается кнопка "Каталог" и стрелка */
+
+/*Здесь начинается каталог*/
+.catalog {
+  background-color: #fff;
+}
+
+.catalog-content {
+  /*Общий контейнер каталога*/
+  /*!border: 1px solid red;*/
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+}
+.catalog-category {
+  /*Категории каталога*/
+  display: inline-block;
+  /* width: 286px; */
+  width: 30%;
+  /*!border: 1px solid blue;*/
+}
+.catalog-content--wrapper {
+  /*Верхний блок с поиском и сортировкой*/
+  width: 70%;
+}
+.block_top {
+  display: inline-block;
+  margin: 0px;
+  height: 83px;
+  /* width: 800px; */
+  width: 100%;
+  /*!border: 1px solid black;*/
+}
+.catalog-items {
+  display: inline-block;
+  /* width: 790px; */
+  width: 100%;
+  height: calc(100% - 43px);
+  /*!  border: 1px solid orange;*/
+}
+
+.category-lable {
+  text-align: center;
+  margin: 29px 0px;
+}
+/*Линия в категориях*/
+.category-line {
+  width: 267px;
+  margin-left: 33px;
+  text-align: center;
+  border-bottom: 1px solid #393939;
+}
+.categories {
+  margin-top: 22px;
+}
+.category-item {
+  width: 100%;
+  padding-top: 12px;
+  height: 50px;
+  padding-bottom: 37px;
+  text-align: center;
+}
+.category-item:hover {
+  /*text-transform: uppercase;*/
+  border-radius: 45px;
+  width: 100%;
+  padding-bottom: 37px;
+  height: 50px;
+  background: #bfe5f3;
+  text-align: center;
+}
+.category-item:disabled {
+  /*text-transform: uppercase;*/
+  border-radius: 45px;
+  width: 100%;
+  padding-bottom: 37px;
+  height: 50px;
+  background: #006667;
+  text-align: center;
+}
+
+.search form {
+  background: #fff;
+
+  width: 100%;
+}
+.search input,
+button {
+  border: none;
+  outline: none;
+}
+.search input {
+  display: inline-block;
+  width: 50%;
+  height: 43px;
+  padding-left: 17px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
+}
+.search div {
+  display: inline-block;
+  height: 83px;
+  /*!border: solid brown 1px;*/
+  padding: 20px 0px 0px 0px;
+  margin: 0px 0px 0px 20px;
+}
+.sort-select {
+  height: 43px;
+  width: 200px;
+  padding: 0px 10px 0px 10px;
+  margin: 0px 0px 0px 20px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+/*Отсюда начинаются карточки товаров*/
+.catalog-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.product-item {
+  width: 220px;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 2px solid #f5f5f5;
+  background: white;
+  transition: 0.3s ease-in;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) inset;
+}
+.product-item:hover {
+  border-bottom: 2px solid #006667;
+}
+.product-item img {
+  display: block;
+  width: 100%;
+}
+.product-list {
+  background: #fafafa;
+  padding: 15px 0;
+}
+.product-list h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #393939;
+  margin: 0 0 10px 0;
+}
+.price {
+  font-size: 16px;
+  color: #006667;
+  display: block;
+  margin-bottom: 12px;
+}
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 12px;
+  background: #cccccc;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 28px;
+  transition: 0.3s ease-in;
+}
+.button:hover {
+  background: #006667;
+  z-index: 1;
+}
+.details {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 12px;
+  background: #cccccc;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 28px;
+  transition: 0.3s ease-in;
+}
+.details:hover {
+  background: #006667;
+  z-index: 1;
+}
+/* Цвет кнопок при наведении на блок */
+
+.product-item:hover .button {
+  background: #31abac;
+}
+.product-item:hover .details {
+  background: #31abac;
+}
+
+/* Цвет кнопок при наведении на сами кнопки */
+.product-item .button:hover {
+  background: #ff005c;
+}
+.product-item .details:hover {
+  background: #ff005c;
+}
